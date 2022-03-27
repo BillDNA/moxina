@@ -5,7 +5,25 @@ Please update this section with important notes about your implementation.
 # Finding things
 1. All Code is located in Assets/Scripts
 2. Any Images are located in Assets/Resources
-3. Prefabs Ar located in Assets/Prefabs
+3. Prefabs are located in Assets/Prefabs 
+# Game Controls
+## Camera Controls
+1. If you touch you mouse to the edge of the screen the camera will pan in that direction.
+    * To Change the speed and range, on the Main Camera set the Edge Pan Speed and Edge Percent
+2. Using the zoom wheal will zoom in and out 
+    * To Change the zoom speed, on the Main Camera set the Zoom Speed
+3. Right Click and hold will enter pan mode, releasing the right mouse button will exit pan mode.
+4. Clicking On the Zoom Button will Dynamically zoom to fit all gears int he window
+    * To adjust the speed set DynamicZoomTime, this is how long in seconds it will take to reach the final position and zoom.
+## Play Controls
+1. Pause and play buttons with start and stop the gears from spinning.
+2. Clicking the Switch button with switch the direction the root gear traves
+    * a toggle is also at the bottom of the screen
+3. Adjusting the speed slider with increase or decrease the speed at witch the root gear rotates.
+    * Changing this with automatically start the gears rotating.
+4. The Clear button will remove all gears but the root gear from the scene.
+5. The Add Gear Button will add a random gear to the gears.  
+6. The Shuffle Button Will clear all existing Gears and created 10 new ones at random.
 # Creating New Gear Sizes
 ### Generating the Gear Image
 1. Use the [Gear Template Website](https://woodgears.ca/gear_cutting/template.html) to create a gear with the desired number of teeth.  Using the following settings.
