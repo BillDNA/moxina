@@ -99,5 +99,5 @@ public class GameManager : MonoBehaviour {
         public void OnReverse() {
             RootGear.RotateClockWise = !RootGear.RotateClockWise;
         }
-    #region Button Handles
+    #endregion Button Handles
 }

@@ -70,15 +70,15 @@ public class Gear : MonoBehaviour {
             }
             return false; //no gear was added
         }  
-    public bool DoseOverlap(Gear other) {
-        if(attachedGears.Contains(other)) return false; //they are allowed to overlap
-        float distSq =
-            Mathf.Pow(transform.position.x - other.transform.position.x,2) +
-            Mathf.Pow(transform.position.y - other.transform.position.y,2);
-        float radSumSq = Mathf.Pow(OverlapRadius + other.OverlapRadius,2);
+        public bool DoseOverlap(Gear other) {
+            if(attachedGears.Contains(other)) return false; //they are allowed to overlap
+            float distSq =
+                Mathf.Pow(transform.position.x - other.transform.position.x,2) +
+                Mathf.Pow(transform.position.y - other.transform.position.y,2);
+            float radSumSq = Mathf.Pow(OverlapRadius + other.OverlapRadius,2);
 
-        return distSq < radSumSq;
-    }
+            return distSq < radSumSq;
+        }
     #endregion gear creation
     #region Rotation
         public void RotateBy(float delta, Gear other) {
